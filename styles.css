@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://64.media.tumblr.com/e411bab140489de58ff475b1121185b1/tumblr_oa1qinjxVO1s3zokdo2_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+}
+nav a{
+    padding: 30px 80px 0 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    width: 400px;
+    display: flex;;
+    flex-direction: column;
+    margin: 20px;
+}
+.progress button{
+    width: 100px;
+    margin: 0 auto 20px;
+}
+.bar{
+    width: 0%;
+    height: 25px;
+    background-color: steelblue;
+    transition: width 2s;
+    /* animation: load 1s linear; */
+}
+button:active ~ .bar{
+    width: 100%;
+    background-color: steelblue;
+}
+/* button:hover+.bar {
+    animation: load 1s linear;
+}
+@keyframes load{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+} */
+.a-z{
+    display: flex;
+    justify-content: space-between;
+}
+.svg{
+    display: flex;
+    justify-content: center;
+}
+.svg a{
+    width: 80px ;
+    padding: 10px;
+    margin-top: 20px;
+}
+svg{
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-top: 2px solid black;
+    width: 80vw;
+    padding: 10px;
+}
